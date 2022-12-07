@@ -1,0 +1,6 @@
+@use "./assets/sass/_variables.scss" as *;
+
+.app {
+  display: flex;
+  flex-direction: row;
+}
