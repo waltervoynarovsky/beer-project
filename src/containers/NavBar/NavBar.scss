@@ -1,6 +1,10 @@
 .nav-bar {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+
   border: 2px solid red;
   max-width: 25vw;
-  min-height: 80vh;
+  max-height: 800px;
 }

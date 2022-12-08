@@ -14,7 +14,6 @@ const CardList = (props) => {
         />
         <h2>{beerObject.name}</h2>
         <h3>{beerObject.description}</h3>
-
         <div className="p-tags">
           <p>First Brewed: {beerObject.first_brewed}</p>
           <p>ABV: {beerObject.abv}</p>
