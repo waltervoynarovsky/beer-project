@@ -1,10 +1,20 @@
 .nav-bar {
+  background-color: #333;
+  opacity: 50%;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-around;
-
-  border: 2px solid red;
-  max-width: 25vw;
-  max-height: 800px;
+  align-items: center;
+  min-height: 600px;
+  margin-left: 0.8rem;
+  margin-top: 0.8rem;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  position: fixed;
+  size: 4rem;
+  box-sizing: border-box;
 }
+
+// TODO NAV-BAR SHOULD MOVE TOP FOR MOBILE VERSIONS

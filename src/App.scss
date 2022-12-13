@@ -3,4 +3,12 @@
 .app {
   display: flex;
   flex-direction: row;
+  background-color: lightgray;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 646px) {
+  .app {
+    flex-direction: column;
+  }
 }

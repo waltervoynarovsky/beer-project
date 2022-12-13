@@ -1,17 +1,22 @@
 @use "../../assets/sass/variables" as *;
 
 .beer-grid {
-  border: 2px solid green;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-left: 20%;
+  margin-left: 10%;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+  margin-right: 0.3rem;
+  gap: 0.2rem;
 }
 
 .beer-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid red;
+  justify-content: space-around;
+  border: 2px solid $color-primary;
+  flex-wrap: wrap;
   padding: 2rem;
   border-radius: 20px;
   &__img {
@@ -22,5 +27,45 @@
   .p-tags {
     text-align: left;
     align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .beer-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 875px) {
+  .beer-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .beer-card {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .beer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .beer-card {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .beer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .beer-card {
+    flex-wrap: wrap;
   }
 }
