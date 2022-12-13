@@ -62,7 +62,7 @@ function App() {
         handleOnChange={handleOnChange}
         selected={filter}
       />
-      <CardList beerArr={filteredBeers} />
+      <CardList data-testid="beers" beerArr={filteredBeers} />
     </div>
   );
 }
