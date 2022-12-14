@@ -7,7 +7,6 @@ function App() {
   const [searchTerm, setSearchTerm] = useState("");
   const [filter, setFilter] = useState("");
   const [beers, setBeers] = useState([]);
-  // const [acidity, setAcidity] = useState(false);
   const getBeers = async () => {
     let url = "";
 
@@ -21,8 +20,6 @@ function App() {
     const result = await fetch(url);
     const beerData = await result.json();
     setBeers(beerData);
-    // const beerLowerCase = beerData.name.toLowerCase();
-    // return beerLowerCase.includes(searchTerm);
 
     if (filter === "acidic(ph < 4)") {
       const highAcidity = beerData.filter((beer) => {
@@ -52,7 +49,7 @@ function App() {
 
   useEffect(() => {
     getBeers();
-  }, [filter]);
+  });
 
   return (
     <div className="app">
