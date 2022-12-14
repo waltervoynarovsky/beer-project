@@ -1,21 +1,21 @@
 import React from "react";
-import "./RadioButtons.scss";
+import "./FilterButtons.scss";
 
-// onChange prop -> function -> run when the radio button changes
+// onChange prop -> function -> run when the Filter button changes
 // selected -> whether it has been selected or not
 // options -> an array of options
 // label -> string
 
-const RadioButtons = ({ onChange, selected, options, label }) => {
+const FilterButtons = ({ onChange, selected, options, label }) => {
   return (
-    <div className="radio-buttons">
+    <div className="Filter-buttons">
       <p>{label}</p>
       {options.map((option, index) => {
         const optionLower = option.toLowerCase();
         const optionCapitalized =
           optionLower[0].toUpperCase() + optionLower.slice(1);
         return (
-          <div key={"radio-button" + option + index}>
+          <div key={"filter-button" + option + index}>
             <input
               type="checkbox"
               name="filters"
@@ -23,7 +23,7 @@ const RadioButtons = ({ onChange, selected, options, label }) => {
               checked={optionLower === selected.toLowerCase()}
               onChange={onChange}
             />
-            <label className="radio-buttons__label" htmlFor={optionLower}>
+            <label className="filter-buttons__label" htmlFor={optionLower}>
               {optionCapitalized}
             </label>
           </div>
@@ -33,4 +33,4 @@ const RadioButtons = ({ onChange, selected, options, label }) => {
   );
 };
 
-export default RadioButtons;
+export default FilterButtons;

@@ -1,6 +1,6 @@
 import "./NavBar.scss";
 import SearchBox from "../../components/SearchBox/SearchBox";
-import RadioButtons from "../../components/RadioButtons/RadioButtons";
+import FilterButtons from "../../components/FilterButtons/FilterButtons";
 
 const NavBar = ({ handleInput, searchTerm, handleOnChange, selected }) => {
   const options = ["High ABV (> 6.0%)", "Classic Range", "Acidic(ph < 4)"];
@@ -12,7 +12,7 @@ const NavBar = ({ handleInput, searchTerm, handleOnChange, selected }) => {
         searchTerm={searchTerm}
         handleInput={handleInput}
       />
-      <RadioButtons
+      <FilterButtons
         onChange={handleOnChange}
         selected={selected}
         options={options}

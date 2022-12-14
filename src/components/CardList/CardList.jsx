@@ -4,7 +4,6 @@ const CardList = (props) => {
   const { beerArr } = props;
 
   const beerCards = beerArr.map((beerObject, index) => {
-    console.log(beerObject);
     return (
       <div className="beer-card" key={index + 1}>
         <img

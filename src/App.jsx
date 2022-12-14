@@ -33,7 +33,11 @@ function App() {
   };
 
   const handleOnChange = (event) => {
-    setFilter(event.target.value);
+    if (event.target.checked) {
+      setFilter(event.target.value);
+    } else {
+      setFilter("");
+    }
   };
 
   const handleInput = (event) => {
@@ -49,7 +53,7 @@ function App() {
 
   useEffect(() => {
     getBeers();
-  });
+  }, [filter]);
 
   return (
     <div className="app">
