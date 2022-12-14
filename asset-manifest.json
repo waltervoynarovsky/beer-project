@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.c3826aeb.css",
-    "main.js": "/static/js/main.1cfc3684.js",
-    "static/js/787.50de71d7.chunk.js": "/static/js/787.50de71d7.chunk.js",
-    "index.html": "/index.html",
-    "main.c3826aeb.css.map": "/static/css/main.c3826aeb.css.map",
-    "main.1cfc3684.js.map": "/static/js/main.1cfc3684.js.map",
-    "787.50de71d7.chunk.js.map": "/static/js/787.50de71d7.chunk.js.map"
+    "main.css": "/beer-project/static/css/main.c3826aeb.css",
+    "main.js": "/beer-project/static/js/main.d300325a.js",
+    "static/js/787.50de71d7.chunk.js": "/beer-project/static/js/787.50de71d7.chunk.js",
+    "index.html": "/beer-project/index.html",
+    "main.c3826aeb.css.map": "/beer-project/static/css/main.c3826aeb.css.map",
+    "main.d300325a.js.map": "/beer-project/static/js/main.d300325a.js.map",
+    "787.50de71d7.chunk.js.map": "/beer-project/static/js/787.50de71d7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c3826aeb.css",
-    "static/js/main.1cfc3684.js"
+    "static/js/main.d300325a.js"
   ]
 }
