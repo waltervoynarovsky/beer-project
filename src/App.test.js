@@ -13,12 +13,12 @@ describe("App tests", () => {
     const filters = screen.getByText(
       "High abv (> 6.0%)" && "Classic range" && "Acidic(ph < 4)"
     );
-    expect(filters).toBeInTheDocument;
+    expect(filters).toBeInTheDocument();
   });
 
   it("should render the beers", () => {
     render(<App />);
     const beers = screen.queryByTestId("beers");
-    expect(beers).toBeInTheDocument;
+    expect(beers).toBeInTheDocument();
   });
 });

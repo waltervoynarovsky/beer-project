@@ -3,7 +3,7 @@ import SearchBox from "../../components/SearchBox/SearchBox";
 import FilterButtons from "../../components/FilterButtons/FilterButtons";
 
 const NavBar = ({ handleInput, searchTerm, handleOnChange, selected }) => {
-  const options = ["High ABV (> 6.0%)", "Classic Range", "Acidic(ph < 4)"];
+  const options = ["high ABV (> 6.0%)", "classic Range", "acidic(ph < 4)"];
 
   return (
     <div className="nav-bar">

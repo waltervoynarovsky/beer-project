@@ -7,6 +7,7 @@ function App() {
   const [searchTerm, setSearchTerm] = useState("");
   const [filter, setFilter] = useState("");
   const [beers, setBeers] = useState([]);
+
   const getBeers = async () => {
     let url = "";
 
@@ -63,7 +64,9 @@ function App() {
         handleOnChange={handleOnChange}
         selected={filter}
       />
-      <CardList data-testid="beers" beerArr={filteredBeers} />
+      <div data-testid="beers">
+        <CardList beerArr={filteredBeers} />
+      </div>
     </div>
   );
 }
