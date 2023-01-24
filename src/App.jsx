@@ -9,15 +9,17 @@ function App() {
   const [beers, setBeers] = useState([]);
 
   const getBeers = async () => {
-    let url = "";
-
+    // SET THE VARIABLE TO THE URL YOU WILL USE NO MATTER WHAT
+    let url = "https://api.punkapi.com/v2/beers?";
+    // IF YOU NEED TO ADD THE QUERY PARAM ONTO THE END OF IT
     if (filter === "high abv (> 6.0%)") {
-      url = `https://api.punkapi.com/v2/beers/?abv_gt=6`;
-    } else if (filter === "classic range") {
-      url = `https://api.punkapi.com/v2/beers/?brewed_before=01-2010`;
-    } else {
-      url = `https://api.punkapi.com/v2/beers`;
+      url += "&abv_gt=6";
     }
+    // IF YOU NEED TO ADD THE QUERY PARAM ONTO THE END OF IT
+    if (filter === "classic range") {
+      url += "&brewed_before=12-2010";
+    }
+    // THIS MEANS THAT THE URL VARIABLE CAN BE EITHER OF THE FOLLOWING
     const result = await fetch(url);
     const beerData = await result.json();
     setBeers(beerData);
